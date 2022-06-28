@@ -184,17 +184,19 @@ body {
     }
 }
 @media(max-width:926px) {
+    
     .sobre img {  
-        width: 25em;
-        height: 25rem;
+        width: 36em;
+        height: 36rem;
         border: 1.2rem solid #313131;
         border-radius: 50%;
+        margin-bottom: 1.5rem;
     }
 
     .sobre .conteudo p {
         font-size: 1.4rem;
         color: white;
-        margin-top: 1rem;
+        margin-top: 1.5rem;
         width: 100%;
         /* text-align: justify; */
     }
@@ -224,6 +226,7 @@ body {
     }
 
     .sobre img {
+        
         margin-top: 2rem;
         margin-bottom: .5rem;
         border: 1rem solid #313131;
@@ -251,7 +254,7 @@ body {
         height: auto;
     }
     .sobre img {
-        width: 25rem;
+       margin-bottom: 1rem;
         border: 1rem solid #313131;
     }
 }
