@@ -215,7 +215,7 @@ body {
     
     .sobre {
         width: 100%;
-        height: 100%;
+        height: auto;
         background-color: #707070;
         display: flex;
         flex-direction: column;
@@ -247,11 +247,12 @@ body {
 }
 
 @media(max-width:530px) {
+    .sobre{
+        height: auto;
+    }
     .sobre img {
         width: 25rem;
         border: 1rem solid #313131;
     }
-   
-
 }
 
