@@ -3,7 +3,7 @@
 <h1 align="center"> Teste Pratico</h1>
 
 <h1>
-    <img width="965px" src="/image/print.png" alt="Imagem Site">
+    <img width="965px" src="image/print.png" alt="Imagem Site">
 </h1>
 
  
