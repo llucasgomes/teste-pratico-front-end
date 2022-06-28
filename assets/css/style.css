@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/* Cabeçalho */
+.cabecalho{
+    display: none;
+    background-color: #313131;
+    height: 100px;
+}
+.cabecalho  h1{
+    font-size: 4rem;
+    color: white;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.cabecalho p{
+    margin-top: .5rem;
+    font-size: 1.8rem;
+    color: white;
+    width: 96%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.corpo {
+    width: 100%;
+    height: 100%;
+}
+
+/* 1º section */
+.principal {
+    width: 100%;
+    height: 100%;
+    background: url(/assets/image/imagem-Banner.png) center center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+.principal h1 {
+    font-size: 4rem;
+    color: #4d6128;
+    text-transform: uppercase;
+}
+
+.principal p {
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: #213800;
+}
+
+/* 2º section */
+.grid {
+    width: 100%;
+    
+    background-color: #434343;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto, 150px);
+    grid-gap: 2rem;
+    padding: 5rem 0 4rem 0;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 350px;
+    height: auto;
+    align-items: center;
+
+    margin-bottom: 2rem;
+}
+
+.card-item img {
+    width: 100%;
+    border: 1.2rem solid #707070;
+}
+
+.card-item h2 {
+    margin: 1rem 0 1rem 0;
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+.card-item p {
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 1.6rem;
+    color: white;
+}
+
+/* 3º section */
+.sobre {
+    width: 100%;
+    height: 90%;
+    padding-bottom: 10px;
+    background-color: #707070;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.sobre img {
+    width: 35em;
+    height: 35rem;
+    border: 1.2rem solid #313131;
+    border-radius: 50%;
+}
+
+.sobre .conteudo {
+    width: 49%;
+}
+.sobre .conteudo h2{
+    width: 100%;
+    text-align: left;
+    font-size: 3rem;
+    color: white;
+    text-transform: uppercase;
+}
+.sobre .conteudo p {
+    font-size: 1.6rem;
+    color: white;
+    margin-top: 1rem;
+    width: 100%;
+}
+.sobre .conteudo p:nth-child(2) {
+    font-weight: bold;
+}
+.sobre .conteudo p:nth-child(3) {
+    font-style: italic;
+}
+/* 4º section */
+.roda-pe {
+    width: 100%;
+    height: 10rem;
+    background-color: #313131;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.roda-pe h2 {
+    font-size: 3rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+@media (max-width:1279px) {
+    .sobre .logo img {
+        width: 35em;
+        height: 35rem;
+        border: 1.2rem solid #313131;
+        border-radius: 50%;
+    }
+    .sobre .conteudo p {
+        font-size: 1.5rem;
+        color: white;
+        margin-top: 1rem;
+        width: 100%;
+    }
+}
+@media(max-width:926px) {
+    .sobre img {  
+        width: 25em;
+        height: 25rem;
+        border: 1.2rem solid #313131;
+        border-radius: 50%;
+    }
+
+    .sobre .conteudo p {
+        font-size: 1.4rem;
+        color: white;
+        margin-top: 1rem;
+        width: 100%;
+        /* text-align: justify; */
+    }
+}
+@media (max-width:793px) {
+    .cabecalho{
+        display: initial;
+        background-color: #313131;
+        height: 200px;
+       
+    }
+    .principal h1,.principal p {
+        display: none;
+    }
+    .principal {
+        height: calc(100vh - 200px);  
+    }
+    
+    .sobre {
+        width: 100%;
+        height: 100%;
+        background-color: #707070;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre img {
+        margin-top: 2rem;
+        margin-bottom: .5rem;
+        border: 1rem solid #313131;
+     
+    }
+    .sobre .conteudo {
+        width: 90%;
+    }
+    .sobre .conteudo h2{
+        text-align: center; 
+    }
+    .sobre .conteudo p {
+        font-size: 1.5rem;     
+        margin-top: 0.5rem;
+        width: 100%;   
+        text-align: center;  
+    }
+    .sobre .conteudo p:nth-child(5) {
+        margin-bottom: 1rem;
+    }
+}
+
+@media(max-width:530px) {
+    .sobre img {
+        width: 25rem;
+        border: 1rem solid #313131;
+    }
+   
+
+}
+
